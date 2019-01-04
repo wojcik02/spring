@@ -10,7 +10,7 @@ import com.springframework.kursspring.domain.Knight;
 import com.springframework.kursspring.domain.Quest;
 
 //tworzenie bean do kontenera
-@Component
+@Component ("starter")
 public class Starter implements CommandLineRunner  {
 	
 	

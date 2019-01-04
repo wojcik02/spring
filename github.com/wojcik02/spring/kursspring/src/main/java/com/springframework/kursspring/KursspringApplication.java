@@ -12,7 +12,7 @@ import com.springframework.kursspring.domain.Knight;
 import com.springframework.kursspring.domain.Quest;
 
 @SpringBootApplication
-@ImportResource("classpath:config/spring-config.xml")
+//@ImportResource("classpath:config/spring-config.xml")
 //@ComponentScan({"com.springframework.kursspring","com.springframework.component"})
 @ComponentScan(basePackageClasses= {Starter.class, Castle.class, Quest.class, Knight.class, TestComponent.class})
 public class KursspringApplication {

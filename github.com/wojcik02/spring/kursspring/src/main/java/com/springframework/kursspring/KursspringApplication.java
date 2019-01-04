@@ -3,10 +3,12 @@ package com.springframework.kursspring;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import com.springframework.kursspring.domain.Castle;
 
 @SpringBootApplication
+@ComponentScan({"com.springframework.kursspring","com.springframework.component"})
 public class KursspringApplication {
 
 	public static void main(String[] args) {

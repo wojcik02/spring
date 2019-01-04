@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import com.springframework.component.TestComponent;
 import com.springframework.kursspring.domain.Castle;
 import com.springframework.kursspring.domain.Knight;
 import com.springframework.kursspring.domain.Quest;
@@ -14,8 +15,15 @@ public class Starter implements CommandLineRunner  {
 	
 	
 	//wstrzyknięcie bean do komponentów springa z konetnera 
+	
+	@Autowired
+	TestComponent test;
+	
+	
 	@Autowired
 	Castle castle;
+	
+
 
 	@Override
 	public void run(String... args) throws Exception {

@@ -4,14 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
 public class Knight {
 	
 //Wstrzykiwanie ypów prymitywnych	
 //Value("Lacelot")
 	
-	private String name = "Lancelot";
-	private int age = 29;
+	private String name ;
+	private int age;
 	private Quest quest;
 //	
 //	public Knight(String name, int age, Quest quest) {
@@ -32,7 +31,6 @@ public Knight(String name, int age) {
 		this.age = age;
 		
 	}
-	@Autowired
 	public void setQuest(Quest quest) {
 		System.out.println("Ustawiam zadanie dla Rycerza");
 		this.quest = quest;
